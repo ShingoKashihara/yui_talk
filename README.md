@@ -3,11 +3,11 @@
 
 #### 目次
 
-- [事前準備](https://github.com/ShingoKashihara/yui_talk#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
+- [事前準備](#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
 
-- [アプリケーション導入〜起動](https://github.com/ShingoKashihara/yui_talk#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%B0%8E%E5%85%A5%E8%B5%B7%E5%8B%95)
+- [アプリケーション導入〜起動](#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%B0%8E%E5%85%A5%E8%B5%B7%E5%8B%95)
 
-- [tips](https://github.com/ShingoKashihara/yui_talk#tips)
+- [tips](#tips)
 
 ## 事前準備
 
