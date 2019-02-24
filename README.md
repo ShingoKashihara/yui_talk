@@ -1,6 +1,10 @@
 # yui_talk
 結チームのチャット開発用リポジトリ
 
+[事前準備](https://github.com/ShingoKashihara/yui_talk#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
+
+[アプリケーション導入〜起動](https://github.com/ShingoKashihara/yui_talk#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%B0%8E%E5%85%A5%E8%B5%B7%E5%8B%95)
+
 ## 事前準備
 
 ### mongodb環境構築
@@ -103,3 +107,26 @@ http://{ipアドレスもしくはドメイン}:3000/login
 http://localhost:3000/login
 
 http://192.168.33.10:3000/login ←　vagrantの場合
+
+## tips
+
+### デフォルトメッセージ（バリデーションなどの英語表記など）の日本語化リスト追加方法
+
+下記ファイルに英語表記、日本語表記を追記します。
+
+`yui_talk/locals/ja.json`
+
+例）
+
+```json
+{
+	"Missing credentials": "認証に失敗しました。",
+	"invalid username": "ユーザー名に誤りがあります。"
+}
+```
+
+ejsでは、下記の形式でメッセージを受け取ります。
+
+```ejs
+<%- __(message) %>
+```
