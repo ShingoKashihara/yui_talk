@@ -13,13 +13,4 @@ router.get('/', function(req, res, next) {
   res.render('login', { title: 'ログイン', messages: messages });
 });
 
-/*router.post('/', function(req, res, next) {
-  console.log(req.body);
-  res.render('login', { title: 'ログイン' });
-});*/
-
-/*router.post('/',
-    passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login', failureFlash: true })
-);*/
-
 module.exports = router;
