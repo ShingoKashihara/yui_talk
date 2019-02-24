@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% messages.forEach(function (message) { %>
+      <font color='red'><%- __(message) %></font>
+      <br>
+    <% }); %>
+    <form action="" method="POST">
+      メールアドレス：<input type="text" name="email" value=""><br>
+      パスワード：<input type="password" name="password" value=""><br>
+      <input type="submit" value="ログイン">
+    </form>
+  </body>
+</html>
