@@ -41,9 +41,34 @@ enabled=1
 
 #### データ作成
 
+- ログイン
 
+`$ mongo`
 
-## ソースのクローン
+- DB作成
+
+`> use yui_talk`
+
+- collection作成
+
+`> db.createCollection("users");`
+
+- データ作成
+
+```json
+db.users.insert(
+  {
+    id: "1",
+    name: "kataoka",
+    email: "kataoka@no1s.biz",
+    password: "test"
+  }
+);
+```
+
+## アプリケーション導入〜起動
+
+### ソースのクローン
 
 - httpsの場合
 
@@ -53,19 +78,19 @@ enabled=1
 
 `$ git clone git@github.com:ShingoKashihara/yui_talk.git`
 
-## ディレクトリに移動
+### ディレクトリに移動
 
 `$ cd yui_talk`
 
-## 依存パッケージインストール
+### 依存パッケージインストール
 
 `$ npm install`
 
-## 起動
+### 起動
 
 `$ npm start`
 
-## 確認
+### 確認
 
 ブラウザで
 
