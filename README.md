@@ -68,9 +68,13 @@ enabled=1
 ## 確認
 
 ブラウザで
+
 http://{ipアドレスもしくはドメイン}:3000/login
+
 にアクセス。
 
 例）
+
 http://localhost:3000/login
+
 http://192.168.33.10:3000/login ←　vagrantの場合
