@@ -15,6 +15,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
 var homeRouter = require('./routes/home');
+var chatroomRouter = require('./routes/chatroom');
 
 var app = express();
 
@@ -74,13 +75,14 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/home', isAuthenticated, homeRouter);
+app.use('/chatroom', isAuthenticated, chatroomRouter);
 
 // ログイン時の挙動
 app.post('/login',
     passport.authenticate('local',
     {
       // 成功時の遷移先
-      successRedirect: '/home',
+      successRedirect: '/chatroom',
       // 失敗時の遷移先
       failureRedirect: '/login',
       // 失敗時にフラッシュメッセージを使用
@@ -126,7 +128,7 @@ passport.use(new LocalStrategy({
 ));
 
 passport.serializeUser(function(user, done) {
-  done(null, user.id);
+  done(null, user);
 });
 
 passport.deserializeUser(function(id, done) {
